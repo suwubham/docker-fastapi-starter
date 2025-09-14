@@ -9,7 +9,7 @@ app.include_router(redis_router, prefix='/api')
 
 @app.get("/", tags=['Root'])
 def read_root():
-    return {"message": "Welcome to the FastAPI application with Redis!"}
+    return {"message": "Docker FastAPI Starter!"}
 
 
 

@@ -11,8 +11,7 @@ services:
       - .:/code
     depends_on:
       - db
-      - redis   # add redis as a dependency if your backend needs it
-
+      - redis   
   db:
     image: postgres:15
     env_file:
