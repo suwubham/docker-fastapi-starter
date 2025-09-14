@@ -15,6 +15,12 @@ class Settings(BaseSettings):
     POSTGRES_PORT: int
     POSTGRES_DB: str 
     
+    # Redis settings
+    REDIS_HOST: str = "redis"
+    REDIS_PORT: int = 6379
+    REDIS_DB: int = 0
+    REDIS_PASSWORD: Optional[str] = None
+    
     # Application settings
     DEBUG: bool = False
     SECRET_KEY: Optional[str] = None
